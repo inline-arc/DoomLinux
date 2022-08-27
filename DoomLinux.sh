@@ -43,7 +43,7 @@ cp $STAGING/doom1.wad $ROOTFS/bin/doom1.wad
 cd $ROOTFS
 mkdir -p bin dev mnt proc sys tmp
 
-echo '#!/bin/sh' > init
+echo '#!/bin/bash' > init
 echo 'dmesg -n 1' >> init
 echo 'mount -t devtmpfs none /dev' >> init
 echo 'mount -t proc none /proc' >> init
